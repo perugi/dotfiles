@@ -1,10 +1,12 @@
+# Program aliases
 alias python=python3
 alias pip=pip3
 alias fd=fdfind
 
 # Shorthands for common commands
 alias gs="git status"
-alias gc="git commit -am"
+alias gc="git commit"
+alias ga="git add"
 alias v=vim
 alias py=python3
 alias ..="cd .."
