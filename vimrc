@@ -1,3 +1,4 @@
+
 " Switch from the default Vi-compatibility
 set nocompatible
 
@@ -5,7 +6,7 @@ set nocompatible
 syntax on
 
 " Show matching braces when text indicator is over them.
-set showmatch
+
 
 " Disable the default Vim startup message.
 set shortmess+=I
@@ -72,3 +73,6 @@ nnoremap <Leader>nf :NERDTreeFind<CR>
 
 colorscheme ron
 
+" Vertical lines at 80 and 100 characters
+:set colorcolumn=80,100
+highlight ColorColumn ctermbg=0
