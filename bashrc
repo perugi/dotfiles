@@ -123,6 +123,9 @@ source /usr/share/doc/fzf/examples/key-bindings.bash
 # Activate vim keybindings.
 set -o vi
 
-# Source the custom functions
+# Make vim the default editor.
+export EDITOR=vim
 
+# Source the custom functions
 source ~/.functions
+
