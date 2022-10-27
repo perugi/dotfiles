@@ -13,10 +13,3 @@
     ~/.tmux.conf: 
     ~/.vimrc: 
     ~/.functions: 
-
-- shell:
-  - git submodule sync --recursive
-  - git submodule update --init --recursive
-  - >
-    git clean -fdx
-    vim/pack/vendor/start/
