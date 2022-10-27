@@ -16,6 +16,9 @@ alias ....="cd ../../.."
 # Default options for commands 
 alias mv="mv -i"		# prompts before overwrite
 alias mkdir="mkdir -p"	# make parent dirs as needed
+alias "gl"="git log --all --graph --decorate"
+alias "glo"="git log --all --graph --decorate --oneline"
+
 
 # Common misspelings
 alias dc=cd
