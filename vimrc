@@ -61,7 +61,6 @@ set tabstop=4
 let mapleader = " "
 
 " ctrlp.vim
-nnoremap ; :CtrlPBuffer<CR>
 
 " Easymotion
 let g:EasyMotion_smartcase = 1
