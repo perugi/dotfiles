@@ -131,3 +131,8 @@ source ~/.functions
 
 # Initialize starship
 eval "$(starship init bash)"
+
+# Start tmux when terminal is opened.
+if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
+    tmux attach || tmux >/dev/null 2>&1
+fi
