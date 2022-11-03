@@ -129,3 +129,5 @@ export EDITOR=vim
 # Source the custom functions
 source ~/.functions
 
+# Initialize starship
+eval "$(starship init bash)"
