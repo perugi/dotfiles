@@ -12,6 +12,7 @@ alias py=python3
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias chx="chmod u+x"
 
 # Default options for commands 
 alias mv="mv -i"		# prompts before overwrite
