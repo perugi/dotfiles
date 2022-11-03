@@ -1,4 +1,3 @@
-
 " Switch from the default Vi-compatibility
 set nocompatible
 
@@ -6,7 +5,7 @@ set nocompatible
 syntax on
 
 " Show matching braces when text indicator is over them.
-
+set showmatch
 
 " Disable the default Vim startup message.
 set shortmess+=I
@@ -56,10 +55,20 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Set tab width to 4 columns.
+" Set tab width to 4 columns and replace by spaces
 set tabstop=4
+set shiftwidth=4
+set expandtab
 
+" Set the leader key to space
 let mapleader = " "
+
+" Set colorscheme
+colorscheme ron
+
+" Vertical lines at 80 and 100 characters
+:set colorcolumn=80,100
+highlight ColorColumn ctermbg=0
 
 " ctrlp.vim
 
@@ -71,8 +80,11 @@ map <Leader> <Plug>(easymotion-prefix)
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 
-colorscheme ron
-
-" Vertical lines at 80 and 100 characters
-:set colorcolumn=80,100
-highlight ColorColumn ctermbg=0
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
