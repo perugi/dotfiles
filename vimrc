@@ -59,6 +59,7 @@ nnoremap <C-H> <C-W><C-H>
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 " Set the leader key to space
 let mapleader = " "
