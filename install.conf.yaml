@@ -5,6 +5,10 @@
 
 - clean: ['~', '~/.config']
 
+- create:
+    - ~/.scripts
+    - ~/.vim/undo-history
+
 - link:
     ~/.bashrc: 
     ~/.bash_logout: 
@@ -12,4 +16,5 @@
     ~/.inputrc: 
     ~/.tmux.conf: 
     ~/.vimrc: 
-    ~/.functions: 
+    ~/.scripts/functions: functions
+    ~/.scripts/backup: backup

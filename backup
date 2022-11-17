@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+rdiff-backup /mnt/data/Domo/Documents/ /mnt/backup/backups/Domo/Documents/
+rdiff-backup /mnt/data/Domo/Pictures/ /mnt/backup/backups/Domo/Pictures/
+rdiff-backup /mnt/data/Domo/Videos/ /mnt/backup/backups/Domo/Videos/
+rdiff-backup /mnt/data/Domo/Tech/ /mnt/backup/backups/Domo/Tech/
+
+rdiff-backup /mnt/data/Tamo/Documents/ /mnt/backup/backups/Tamo/Documents/
+rdiff-backup /mnt/data/Tamo/Pictures/ /mnt/backup/backups/Tamo/Pictures/
+rdiff-backup /mnt/data/Tamo/Videos/ /mnt/backup/backups/Tamo/Videos/

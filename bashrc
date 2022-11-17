@@ -127,7 +127,7 @@ set -o vi
 export EDITOR=vim
 
 # Source the custom functions
-source ~/.functions
+source ~/.scripts/functions
 
 # Initialize starship
 eval "$(starship init bash)"
