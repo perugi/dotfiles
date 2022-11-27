@@ -24,7 +24,7 @@ set laststatus=2
 set backspace=indent,eol,start
 
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
-" shown in any window) that has unsaved changes. This is to prevent you from "
+" shown in any window) that has unsaved changes. This is to prevent you from 
 " forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
 " hidden buffers helpful enough to disable this protection. See `:help hidden`
 " for more information on this.
@@ -65,7 +65,9 @@ set autoindent
 let mapleader = " "
 
 " Set colorscheme
-colorscheme ron
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Vertical lines at 80 and 100 characters
 :set colorcolumn=80,100
