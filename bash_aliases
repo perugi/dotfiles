@@ -1,7 +1,6 @@
 # Program aliases
 alias python=python3
 alias pip=pip3
-alias fd=fdfind
 
 # Shorthands for common commands
 alias gs="git status"
