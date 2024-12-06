@@ -16,6 +16,7 @@ alias ll='exa -alF'
 alias la='exa -A'
 alias l='exa -CF'
 alias activate="source venv/bin/activate"
+alias cl='clear'
 
 # Default options for commands 
 alias mv="mv -i"		# prompts before overwrite
