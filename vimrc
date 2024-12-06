@@ -64,6 +64,9 @@ set autoindent
 " Set the leader key to space
 let mapleader = " "
 
+" Increase the amount of commands recorded in history
+:set history=200
+
 " Set colorscheme
 set background=dark
 let g:solarized_termcolors=256
