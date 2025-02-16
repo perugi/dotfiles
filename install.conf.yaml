@@ -16,5 +16,8 @@
     ~/.inputrc: 
     ~/.tmux.conf: 
     ~/.vimrc: 
+    ~/.config/starship.toml: 
+    ~/.config/fish/config.fish:
+    ~/.config/fish/alias.fish:
     ~/.scripts/functions: functions
     ~/.scripts/backup: backup
