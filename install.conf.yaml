@@ -12,12 +12,12 @@
 - link:
     ~/.bashrc: 
     ~/.bash_logout: 
-    ~/.bash_aliases: 
     ~/.inputrc: 
     ~/.tmux.conf: 
     ~/.vimrc: 
     ~/.config/starship.toml: 
     ~/.config/fish/config.fish:
     ~/.config/fish/alias.fish:
+    ~/.config/fish/functions/mkd.fish: fish_functions/mkd.fish
     ~/.scripts/functions: functions
     ~/.scripts/backup: backup
