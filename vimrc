@@ -86,15 +86,6 @@ map <Leader> <Plug>(easymotion-prefix)
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 " Use a line cursor within insert mode and a block cursor everywhere else.
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
