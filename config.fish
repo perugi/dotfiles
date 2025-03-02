@@ -1,5 +1,8 @@
 source ~/.config/fish/alias.fish
 
+# Use vim as a default editor
+set -gx EDITOR vim
+
 # Use vi key bindings
 set -g fish_key_bindings fish_vi_key_bindings
 
