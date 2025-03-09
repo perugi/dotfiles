@@ -6,6 +6,7 @@ alias v=vim
 # Shorthands for common commands
 abbr -a gs  git status -sb
 abbr -a ga  git add
+abbr -a ga. git add .
 abbr -a gc  git commit
 abbr -a gcm git commit -m
 abbr -a gca git commit --amend
