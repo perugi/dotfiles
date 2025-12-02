@@ -28,9 +28,9 @@ abbr -a ..   z ..
 abbr -a ...  z ../..
 abbr -a .... z ../../..
 abbr -a chx  chmod u+x
-abbr -a ls   exa
-abbr -a ll   exa -alF
-abbr -a la   exa -A
+abbr -a ls   eza
+abbr -a ll   eza -alF
+abbr -a la   eza -A
 
 abbr -a activate source venv/bin/activate
 
@@ -43,6 +43,6 @@ alias egrep='egrep --color=auto'
 
 # Common misspelings
 abbr -a dc z
-abbr -a sl exa
+abbr -a sl eza
 
 
