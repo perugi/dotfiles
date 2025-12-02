@@ -128,6 +128,36 @@ else
     log_warning "eza already installed, skipping"
 fi
 
+log_info "Installing bat (modern cat replacement)..."
+sudo apt install -y bat
+# Ubuntu installs bat as batcat due to name conflict
+if [ ! -f ~/.local/bin/bat ] && [ -f /usr/bin/batcat ]; then
+    mkdir -p ~/.local/bin
+    ln -s /usr/bin/batcat ~/.local/bin/bat
+fi
+log_success "bat installed"
+
+log_info "Installing fd (modern find replacement)..."
+sudo apt install -y fd-find
+# Ubuntu installs fd as fdfind
+if [ ! -f ~/.local/bin/fd ] && [ -f /usr/bin/fdfind ]; then
+    mkdir -p ~/.local/bin
+    ln -s /usr/bin/fdfind ~/.local/bin/fd
+fi
+log_success "fd installed"
+
+log_info "Installing ripgrep (modern grep replacement)..."
+sudo apt install -y ripgrep
+log_success "ripgrep installed"
+
+log_info "Installing lazygit (Git TUI)..."
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+rm lazygit lazygit.tar.gz
+log_success "lazygit installed"
+
 ###############################################################################
 # 5. Install Docker
 ###############################################################################

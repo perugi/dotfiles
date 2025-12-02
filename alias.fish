@@ -34,12 +34,15 @@ abbr -a la   eza -A
 
 abbr -a activate source venv/bin/activate
 
+# Modern CLI tool aliases
+abbr -a cat bat
+abbr -a find fd
+abbr -a grep rg
+abbr -a lg lazygit
+
 # Default options for commands 
 alias mv="mv -i"		# prompts before overwrite
 alias mkdir="mkdir -p"	# make parent dirs as needed
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
 
 # Common misspelings
 abbr -a dc z
