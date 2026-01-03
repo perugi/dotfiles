@@ -22,3 +22,5 @@ zoxide init fish | source
 # Initialize Starship
 starship init fish | source
 
+# Use latest node version
+nvm use lts --silent
