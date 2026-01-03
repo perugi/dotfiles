@@ -28,21 +28,24 @@ abbr -a ..   z ..
 abbr -a ...  z ../..
 abbr -a .... z ../../..
 abbr -a chx  chmod u+x
-abbr -a ls   exa
-abbr -a ll   exa -alF
-abbr -a la   exa -A
+abbr -a ls   eza
+abbr -a ll   eza -alF
+abbr -a la   eza -A
 
 abbr -a activate source venv/bin/activate
+
+# Modern CLI tool aliases
+abbr -a cat bat
+abbr -a find fd
+abbr -a grep rg
+abbr -a lg lazygit
 
 # Default options for commands 
 alias mv="mv -i"		# prompts before overwrite
 alias mkdir="mkdir -p"	# make parent dirs as needed
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
 
 # Common misspelings
 abbr -a dc z
-abbr -a sl exa
+abbr -a sl eza
 
 

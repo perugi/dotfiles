@@ -1,6 +1,26 @@
 " Switch from the default Vi-compatibility
 set nocompatible
 
+" vim-plug plugin manager
+call plug#begin('~/.vim/plugged')
+
+" Color scheme
+Plug 'altercation/vim-colors-solarized'
+
+" File navigation and search
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'preservim/nerdtree'
+
+" Motion and editing
+Plug 'easymotion/vim-easymotion'
+Plug 'justinmk/vim-sneak'
+Plug 'tpope/vim-surround'
+
+" Syntax checking
+Plug 'vim-syntastic/syntastic'
+
+call plug#end()
+
 " Turn on syntax highlighting.
 syntax on
 
@@ -67,20 +87,21 @@ let mapleader = " "
 " Increase the amount of commands recorded in history
 :set history=200
 
-" Set colorscheme
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
-
 " Vertical lines at 80 and 100 characters
 :set colorcolumn=80,100
-highlight ColorColumn ctermbg=0
 
-" ctrlp.vim
+" Set colorscheme (after plugins are loaded)
+set background=dark
+let g:solarized_termcolors=256
+silent! colorscheme solarized
+highlight ColorColumn ctermbg=0
 
 " Easymotion
 let g:EasyMotion_smartcase = 1
 map <Leader> <Plug>(easymotion-prefix)
+
+" vim-sneak
+let g:sneak#label = 1
 
 " NERDtree
 nnoremap <Leader>nt :NERDTreeToggle<CR>

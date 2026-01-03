@@ -65,20 +65,6 @@ if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ] && [ -z "${TMUX}" ]; then
     tmux attach || tmux >/dev/null 2>&1
 fi
 
-# Add sass to path
-export PATH=$PATH:/home/dominik/Tech/env/dart-sass
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Wrapper function for exercism.org exercises
-exercism () {
-    local out
-    readarray -t out < <(command exercism "$@")
-    printf '%s\n' "${out[@]}"
-    if [[ $1 == "download" && -d "${out[-1]}" ]]; then
-        cd "${out[-1]}" || return 1
-    fi
-}
-. "$HOME/.cargo/env"

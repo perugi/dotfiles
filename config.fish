@@ -14,7 +14,14 @@ if type -q tmux
 end
 
 # Set up fzf key bindings
-fzf --fish | source
+if type -q fzf
+    if test -f /usr/share/fish/vendor_functions.d/fzf_key_bindings.fish
+        source /usr/share/fish/vendor_functions.d/fzf_key_bindings.fish
+        fzf_key_bindings
+    else if test -f /usr/share/doc/fzf/examples/key-bindings.fish
+        source /usr/share/doc/fzf/examples/key-bindings.fish
+    end
+end
 
 # Initialize zoxide 
 zoxide init fish | source
@@ -24,3 +31,7 @@ starship init fish | source
 
 # Use latest node version
 nvm use lts --silent
+
+# Copilot shell integration
+string match -q "$TERM_PROGRAM" "vscode"
+and . (code --locate-shell-integration-path fish)
